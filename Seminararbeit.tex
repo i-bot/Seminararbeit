@@ -28,10 +28,12 @@
 \geometry{verbose,a4paper,tmargin=25mm,bmargin=25mm,lmargin=30mm,rmargin=30mm}
 
 % Print the page number on the center head
-\usepackage{scrpage2} 
-\clearscrheadfoot 
-\chead{-\ \pagemark\ -} 
-\pagestyle{scrheadings} 
+\usepackage{scrpage2}
+\clearscrheadfoot
+\chead{-\ \pagemark\ -}
+\pagestyle{scrheadings}
+
+\addto{\captionsngerman}{\renewcommand{\refname}{Quellenverzeichnis}}
 
 % Start document
 
@@ -57,6 +59,6 @@
 \input{./Sections/Optische_Wellenleiter_Die_polymere_optische_Faser}
 \input{./Sections/Schluss}
 
-\include{./Quellen/Literatur}
+\include{./Quellen/Quellenverzeichnis}
 
 \end{document}
