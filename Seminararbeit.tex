@@ -9,9 +9,15 @@
 \usepackage{multibib}
 \usepackage[hyphens]{url}
 \usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
 \usepackage{Seminararbeit-Vorlage/seminararbeit-vorlage}
 
 \usepackage[nottoc,numbib]{tocbibind}
+
+\renewcommand{\listoffigures}{\begingroup
+\tocsection
+\tocfile{\listfigurename}{lof}
+\endgroup}
 
 % Use Helvet font globally
 \usepackage{helvet}
@@ -35,6 +41,8 @@
 \pagestyle{scrheadings}
 
 \addto{\captionsngerman}{\renewcommand{\refname}{Quellenverzeichnis}}
+\addto{\captionsngerman}{\renewcommand{\figurename}{Abb.}}
+\addto\extrasngerman{\def\figureautorefname{Abb.}}
 
 % Start document
 
@@ -61,5 +69,7 @@
 \input{./Sections/Schluss}
 
 \include{./Quellen/Quellenverzeichnis}
+
+\include{./Bilder/Bilderverzeichnis}
 
 \end{document}
