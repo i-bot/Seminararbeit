@@ -11,6 +11,8 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
 \usepackage{Seminararbeit-Vorlage/seminararbeit-vorlage}
+\usepackage{amsmath}
+\usepackage{amssymb}
 
 \usepackage[nottoc,numbib]{tocbibind}
 
@@ -48,6 +50,21 @@
 \addto{\captionsngerman}{\renewcommand{\refname}{Quellenverzeichnis}}
 \addto{\captionsngerman}{\renewcommand{\figurename}{Abb.}}
 \addto\extrasngerman{\def\figureautorefname{Abb.}}
+
+\usepackage{chemfig}
+\usepackage{chemnum}
+\usepackage{chemmacros}
+
+\newcommand\setpolymerdelim[2]{\def\delimleft{#1}\def\delimright{#2}}
+\def\makebraces[#1,#2]#3#4#5{%
+\edef\delimhalfdim{\the\dimexpr(#1+#2)/2}%
+\edef\delimvshift{\the\dimexpr(#1#2)/2}%
+\chemmove{%
+\node[at=(#4),yshift=(\delimvshift)]
+{$\left\delimleft\vrule height\delimhalfdim depth\delimhalfdim width0pt\right.$};%
+\node[at=(#5),yshift=(\delimvshift)]
+{$\left.\vrule height\delimhalfdim depth\delimhalfdim width0pt\right\delimright_{\rlap{$\scriptstyle#3$}}$};}}
+\setpolymerdelim[]
 
 % Start document
 
