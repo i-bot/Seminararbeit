@@ -1,1 +1,121 @@
 \subsubsection{Herstellung von Polycarbonat}
+
+Polycarbonat kann entweder über eine Umesterung oder über eine
+Grenzflächenkondensation hergestellt werden. Beide Reaktionen können als
+Sonderformen der Polykondensation eingeordnet werden, da ein Polyester entsteht,
+sich aber kein Wasser abspaltet. Polycarbonat selbst ist ein lineares
+Makromolekül und zählt somit zu den Thermoplasten.
+
+Bei der Umesterung kommen die, in Schmelze versetzten, Monomere Bisphenol A und
+Diphenylcarbonat zum Einsatz. \autoref{rec:diphenylcarbonat} zeigt die
+Herstellung von Diphenylcarbonat aus Phenol und Phosgen unter Abspaltung von
+Salzsäure. Bisphenol A und Diphenylcarbonat reagieren in
+\autoref{rec:polycarbonat} Milieu zu Polycarbonat. Die beiden Monomere sind zu
+gleichen Teilen in dem Copolymere vertreten, da sie auf alternierende Weise
+angeordnet sind. Die Reaktion endet wenn keine Monomere mehr vorhanden sind.
+
+\begin{figure}[h]
+    \begin{center}
+        \footnotesize
+        \setatomsep{1.7em}
+
+        \chemname{\chemfig{*6(-=-(-OH)=-=)}}{Phenol}
+        \chemsign{+}
+        \chemname{\chemfig{C(=[:90]\lewis{13,O})(-[:210]\lewis{357,Cl})(-[:330]\lewis{157,Cl})}}{Phosgen}
+        \chemrel{->}
+        \chemname{\chemfig{C(=[:90]\lewis{13,O})(-[:210]\lewis{57,O}-[:150](*6(-=-=-=)))(-[:330]\lewis{57,O}-[:30](*6(-=-=-=)))}}{Diphenylcarbonat}
+        \chemsign{+}
+        \chemname{\chemfig{HCl}}{Salzsäure}
+
+        \caption{Reaktion: Diphenylcarbonat}
+        \label{rec:diphenylcarbonat}
+    \end{center}
+\end{figure}
+
+\begin{figure}[h]
+    \begin{center}
+        \footnotesize
+        \setatomsep{1.7em}
+
+        \chemname{\chemfig{C(-[4]*6(-=-(-$\scriptstyle n$\,HO)=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-OH)=-=))}}{Bisphenol A}
+        \chemsign{+ $\scriptstyle n$}
+        \chemname{\chemfig{C(=[:90]\lewis{13,O})(-[:210]\lewis{57,O}-[:150](*6(-=-=-=)))(-[:330]\lewis{57,O}-[:30](*6(-=-=-=)))}}{Diphenylcarbonat}
+
+        \vspace{10pt}
+
+        \chemrel{->}
+        \chemname{\chemfig{C(-[4]*6(-=-(-\lewis{26,O}-[@{op,0.75}]H)=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-\lewis{26,O}-C(=[2]\lewis{13,O})-[@{cl,0.75}]\lewis{26,O}-(*6(-=-=-=)))=-=))}}{Polycarbonat}
+        \makebraces[23pt,23pt]{n}{op}{cl}
+        \chemsign{+ $\scriptstyle (2n-1)$}
+        \chemname{\chemfig{*6(-=-(-OH)=-=)}}{Phenol}
+
+        \caption{Reaktion: Polycarbonat}
+        \label{rec:polycarbonat}
+    \end{center}
+\end{figure}
+
+Die Deprotonierung \autoref{rec:deprotonierung} findet im basischen Milieu statt. Dabei spaltet sich ein Proton (H\textsuperscript{+}) vom einer der Hydroxygruppen ab und lagert sich an das Hydroxidion an. Durch diesen Vorgang wird das Bisphenol A negativ geladen und das Hydroxidion wird zu Wasser protoniert. Die Umesterung beginnt mit dem nukleophilen Angriff \autoref{rec:nukleophilerangriff} des Bisphenol A-Anions auf das Diphenylcarbonat.
+
+\begin{figure}[h]
+    \begin{center}
+        \footnotesize
+        \setatomsep{1.7em}
+
+        \chemname{\chemfig{C(-[4]*6(-=-(-HO)=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-O@{pr1}H)=-=))}}{Bisphenol A}
+        \chemsign{+}
+        \chemname{\chemfig{@{ak1}OH(-[:135,.5,,,draw=none]\fsscrm)}}{Hydroxidion}
+        \chemmove[->,shorten <=2pt]{\draw[shorten >=2pt](pr1).. controls +(90:1cm) and +(90:1cm).. (ak1);}
+        \chemrel{->}
+        \chemname{\chemfig{C(-[4]*6(-=-(-HO)=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-\lewis{026,O}(-[:45,.7,,,draw=none]\fsscrm))=-=))}}{Bisphenol A-Anion}
+        \chemsign{+}
+        \chemname{\chemfig{H_2O}}{Wasser}
+
+        \caption{Reaktion: Deprotonierung}
+        \label{rec:deprotonierung}
+    \end{center}
+\end{figure}
+
+\begin{figure}[h]
+    \begin{center}
+        \footnotesize
+        \setatomsep{1.7em}
+
+        \chemname{\chemfig{C(-[4]*6(-=-(-HO)=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-@{np2}\lewis{026,O}(-[:45,.7,,,draw=none]\fsscrm))=-=))}}{Bisphenol A-Anion}
+        \chemsign{+}
+        \chemname{\chemfig{@{ep2}C(-[:25,.7,,,draw=none]\fdelp)(=[@{db2}:90]@{o2}\lewis{13,O})(-[:210]\lewis{57,O}-[:150](*6(-=-=-=)))(-[:330]\lewis{57,O}-[:30](*6(-=-=-=)))}}{Diphenylcarbonat}
+        \chemmove[->,shorten <=2.5pt]{
+            \draw[shorten >=2.5pt](np2).. controls +(90:1cm) and +(135:2.5cm).. (ep2);
+            \draw[shorten >=6pt](db2).. controls +(0:1cm) and +(90:1cm).. (o2);}
+
+        \vspace{10pt}
+
+        \chemrel{->}
+        \chemname{\chemfig{C(-[4]*6(-=-(-HO)=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-\lewis{26,O}-C(-[2]\lewis{024,O}(-[:45,.7,,,draw=none]\fsscrm))(-[0]\lewis{26,O}-(*6(=-=-=-)))(-[6]\lewis{04,O}-[6](*6(=-=-=-))))=-=))}}{}
+
+        \caption{Reaktion: Nukleophiler Angriff}
+        \label{rec:nukleophilerangriff}
+    \end{center}
+\end{figure}
+
+\begin{figure}[h]
+    \begin{center}
+        \footnotesize
+        \setatomsep{1.7em}
+
+        \chemname{\chemfig{C(-[4]*6(-=-(-HO)=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-\lewis{26,O}-C(-[@{ndb3}2]@{o3}\lewis{024,O}(-[:45,.7,,,draw=none]\fsscrm))(-[0]\lewis{26,O}-(*6(=-=-=-)))(-[@{b3}6]@{p3}\lewis{04,O}-[6](*6(=-=-=-))))=-=))}}{}
+        \chemmove[->,shorten <=2.5pt]{
+            \draw[shorten >=2.5pt](b3).. controls +(0:1cm) and +(315:1cm).. (p3);
+            \draw[shorten >=2.5pt](o3).. controls +(0:0.5cm) and +(0:0.5cm).. (ndb3);}
+
+        \vspace{10pt}
+
+        \chemrel{->}
+        \chemnameinit{}
+        \chemname{\chemfig{C(-[4]*6(-=-(-OH)=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-\lewis{26,O}-C(=[2]\lewis{13,O})-\lewis{26,O}-(*6(-=-=-=)))=-=))}}{Carbonat}
+        \chemsign{+}
+        \chemname{\chemfig{*6(-=-(-\lewis{137,O}(-[:0,.7,,,draw=none]\fsscrm))=-=)}}{Phenol}
+
+        \caption{Reaktion: Abspaltung eines Phenolmoleküls}
+        \label{rec:abspaltung}
+    \end{center}
+\end{figure}
