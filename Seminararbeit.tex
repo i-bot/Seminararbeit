@@ -10,9 +10,13 @@
 \usepackage[hyphens]{url}
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
-\usepackage{Seminararbeit-Vorlage/seminararbeit-vorlage}
+\usepackage{chemfig}
+\usepackage{chemnum}
+\usepackage{chemmacros}
 \usepackage{amsmath}
 \usepackage{amssymb}
+
+\usepackage{Seminararbeit-Vorlage/seminararbeit-vorlage}
 
 \usepackage[nottoc,numbib]{tocbibind}
 
@@ -51,10 +55,6 @@
 \addto{\captionsngerman}{\renewcommand{\figurename}{Abb.}}
 \addto\extrasngerman{\def\figureautorefname{Abb.}}
 
-\usepackage{chemfig}
-\usepackage{chemnum}
-\usepackage{chemmacros}
-
 \newcommand\setpolymerdelim[2]{\def\delimleft{#1}\def\delimright{#2}}
 \def\makebraces[#1,#2]#3#4#5{%
 \edef\delimhalfdim{\the\dimexpr(#1+#2)/2}%
@@ -67,7 +67,6 @@
 \setpolymerdelim[]
 
 % Start document
-
 \begin{document}
 
 % Frontpage
