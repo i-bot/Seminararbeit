@@ -30,7 +30,7 @@ mehr vorhanden sind.
         \chemsign{+}
         \chemname{\chemfig{HCl}}{Salzsäure}
 
-        \caption{Reaktion: Diphenylcarbonat}
+        \caption{Umesterung: Herstellung von Diphenylcarbonat}
         \label{rec:diphenylcarbonat}
     \end{center}
 \end{figure}
@@ -52,7 +52,7 @@ mehr vorhanden sind.
         \chemsign{+ $\scriptstyle (2n-1)$}
         \chemname{\chemfig{*6(-=-(-OH)=-=)}}{Phenol}
 
-        \caption{Reaktion: Polycarbonat}
+        \caption{Umesterung: Polykondensation von Polycarbonat}
         \label{rec:polycarbonat}
     \end{center}
 \end{figure}
@@ -97,7 +97,7 @@ Polycarbonat an.
         \chemsign{+}
         \chemname{\chemfig{H_2O}}{Wasser}
 
-        \caption{Reaktion: Deprotonierung}
+        \caption{Umesterung: Deprotonierung von Bisphenol A durch Hydroxidionen}
         \label{rec:deprotonierung}
     \end{center}
 \end{figure}
@@ -119,7 +119,7 @@ Polycarbonat an.
         \chemrel{->}
         \chemname{\chemfig{C(-[4]*6(-=-(-HO)=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-\lewis{26,O}-C(-[2]\lewis{024,O}(-[:45,.7,,,draw=none]\fsscrm))(-[0]\lewis{26,O}-(*6(=-=-=-)))(-[6]\lewis{04,O}-[6](*6(=-=-=-))))=-=))}}{}
 
-        \caption{Reaktion: Nukleophiler Angriff}
+        \caption{Umesterung: Nukleophiler Angriff}
         \label{rec:nukleophilerangriff}
     \end{center}
 \end{figure}
@@ -142,7 +142,72 @@ Polycarbonat an.
         \chemsign{+}
         \chemname{\chemfig{*6(-=-(-\lewis{137,O}(-[:0,.7,,,draw=none]\fsscrm))=-=)}}{Phenolation}
 
-        \caption{Reaktion: Abspaltung eines Phenolmoleküls}
+        \caption{Umesterung: Abspaltung eines Phenolmoleküls}
         \label{rec:abspaltung}
     \end{center}
 \end{figure}
+
+Die zweite Möglichkeit ein Polycarbonat herzustellen, besteht in der
+Grenzflächenkondensation. Hierfür wird Bisphenol A in eine wässrige basische
+Lösung und Phosgen in organische Lösung versetzt \cite{cuzpe}. Als Base kann für
+die wässrige Lösung kann z.B. Natriumhydroxid dienen. Durch die Deprotonierung
+von Bisphonol A durch Natriumhydroxid (siehe \autoref{rec:deprotonierung2})
+enthält die wässrige Lösung Bisphenol A-Anionen und Natriumionen. Durch die
+negative Ladung des Bisphenol A erhöht sich dessen Reaktivität und begünstigt
+den Kettenwachstum. \autoref{rec:polycarbonat2} zeigt die Polymerbildung durch
+eine Polykondensation zwischen den Bisphenol A-Anionen und Phosgen an der
+Grenzfläche zwischen der basischen und organischen Phase. Dabei spaltet sich
+Chloridionen ab, welche mit den Natriumionen als Natriumchlorid ausfallen. Die
+Reaktion in \autoref{rec:polycarbonat2} findet in Form eines nukleophilen
+Angriffes statt, der dem zwischen Bispenol A-Anion und Diphenylcarbonat in
+\autoref{rec:nukleophilerangriff} und \autoref{rec:abspaltung} ähnelt (das
+Phosgen übernimmt die Funktion des Diphenylcarbonats und es spaltet sich statt
+eines Phenolations ein Chloridion ab). Das Polycarbonat lässt sich durch
+Verdampfen des organischen Lösungsmittels, in welchem sich das Polymer
+ansammelt, gewinnen \cite{garoo}.
+
+\begin{figure}[h]
+    \begin{center}
+        \footnotesize
+        \setatomsep{1.7em}
+
+        \chemname{\chemfig{C(-[4]*6(-=-(-HO)=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-OH)=-=))}}{Bisphenol A}
+        \chemsign{+}
+        \chemname{\chemfig{2Na(-[:45,.5,,,draw=none]\fsscrp)(-[:0,1.2,,,draw=none])OH(-[:135,.5,,,draw=none]\fsscrm)}}{Natriumhydroxid}
+
+        \vspace{10pt}
+
+        \chemrel{->}
+        \chemname{\chemfig{C(-[4]*6(-=-(-\lewis{246,O}(-[:135,.7,,,draw=none]\fsscrm)(-[:180,1.4,,,draw=none])Na(-[:45,.6,,,draw=none]\fsscrp))=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-\lewis{026,O}(-[:45,.7,,,draw=none]\fsscrm)(-[:0,1.4,,,draw=none])Na(-[:135,.6,,,draw=none]\fsscrp))=-=))}}{Bisphenol A-Anion, Natriumionen}
+        \chemsign{+}
+        \chemname{\chemfig{2H_2O}}{Wasser}
+
+        \caption{Grenzflächenkondensation: Deprotonierung von Bisphenol A durch Natriumhydroxid}
+        \label{rec:deprotonierung2}
+    \end{center}
+\end{figure}
+
+\begin{figure}[h]
+    \begin{center}
+        \footnotesize
+        \setatomsep{1.7em}
+
+        \chemname{\chemfig{C(-[4]*6(-=-(-\lewis{246,O}(-[:135,.7,,,draw=none]\fsscrm)(-[:180,1.4,,,draw=none])$\scriptstyle n$\,Na(-[:45,.6,,,draw=none]\fsscrp))=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-\lewis{026,O}(-[:45,.7,,,draw=none]\fsscrm)(-[:0,1.4,,,draw=none])Na(-[:135,.6,,,draw=none]\fsscrp))=-=))}}{Bisphenol A-Anion, Natriumionen}
+        \chemsign{+ $\scriptstyle n$}
+        \chemname{\chemfig{C(=[:90]\lewis{13,O})(-[:210]\lewis{357,Cl})(-[:330]\lewis{157,Cl})}}{Phosgen}
+
+        \vspace{10pt}
+
+        \chemrel{->}
+        \chemname{\chemfig{C(-[4]*6(-=-(-\lewis{26,O}-[@{op,0.75}])=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-\lewis{26,O}-C(=[2]\lewis{13,O})-[@{cl,0.75}])=-=))}}{Polycarbonat}
+        \makebraces[23pt,23pt]{n}{op}{cl}
+        \chemsign{+ $\scriptstyle (2n-1)$}
+        \chemname{\chemfig{Na(-[:45,.6,,,draw=none]\fsscrp)(-[:0,1.3,,,draw=none])Cl(-[:135,.6,,,draw=none]\fsscrm)}}{Natriumchlorid}
+
+        \caption{Grenzflächenkondensation: Polykondensation von Polycarbonat}
+        \label{rec:polycarbonat2}
+    \end{center}
+\end{figure}
+
+Der Einsatz von Zusatzstoffen und die Variation des aromatischen Dialkohols
+ermöglichen eine Variation der Eigenschaften des Polycarbonates \cite{garoo}.
