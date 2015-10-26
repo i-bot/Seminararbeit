@@ -8,17 +8,19 @@ Zusammen genommen ergibt dies eine Höhe von ca. 1,2 mm (siehe
 \autoref{fig:cdquer}). Außerdem lässt sich eine Einbuchtung (\textit{pit})
 erkennen, die sich von der Grundebene (\textit{land}) abhebt. \cite{cfcd}
 
-\begin{figure}[h]
-    \begin{center}
-        \begin{minipage}[t]{\textwidth}
-            \begin{center}
-                \includegraphics[height=0.1\textheight]{Bilder/Optische_Datentraeger_Die_Compact_Disc/Funktionsweise/cdquer.png}
-                \caption[Querschnitt einer CD \newline \url{http://daten.didaktikchemie.uni-bayreuth.de/umat/cd_dvd/cd-ausschnitt.gif} (zuletzt aufgerufen am 07.08.2015)]{Querschnitt einer CD}
-                \label{fig:cdquer}
-            \end{center}
-        \end{minipage}
-    \end{center}
-\end{figure}
+\ifthenelse{\boolean{showPics}}{
+    \begin{figure}[h]
+        \begin{center}
+            \begin{minipage}[t]{\textwidth}
+                \begin{center}
+                    \includegraphics[height=0.1\textheight]{Bilder/Optische_Datentraeger_Die_Compact_Disc/Funktionsweise/cdquer.png}
+                    \caption[Querschnitt einer CD \newline \url{http://daten.didaktikchemie.uni-bayreuth.de/umat/cd_dvd/cd-ausschnitt.gif} (zuletzt aufgerufen am 07.08.2015)]{Querschnitt einer CD}
+                    \label{fig:cdquer}
+                \end{center}
+            \end{minipage}
+        \end{center}
+    \end{figure}
+}{}
 
 Die Abtasteinheit, bestehend aus einem Laser und einem Photodetektor, liest die
 Informationen auf einer spiralförmigen Spur von innen nach außen aus. Dafür
@@ -39,33 +41,35 @@ zwischen \textit{pit} und \textit{land} wird der Binärwert 1 zugewiesen. Dies
 entspricht dem Schnittpunkt zwischen der Mittelwertlinie und dem Graph der
 Stromstärke in \autoref{fig:cdstrom}. \cite{cdp}
 
-\begin{figure}[h]
-    \begin{center}
-        \begin{minipage}[t]{0.3\textwidth}
-            \begin{center}
-                \includegraphics[height=0.1\textheight]{Bilder/Optische_Datentraeger_Die_Compact_Disc/Funktionsweise/remcd.png}
-                \caption[Laserlicht auf einem \textit{pit} unter einem Rasterelektronenmikroskop \newline Roth, Klaus: CD, DVD \& Co.: Die Chemie der schillernden Scheiben, in: Chemie in unserer Zeit (41/2007), S. 340]{Laserlicht auf einem \textit{pit} unter einem Rasterelektronenmikroskop}
-                \label{fig:cdrem}
-            \end{center}
-        \end{minipage}
-        \hspace{0.025\textwidth}
-        \begin{minipage}[t]{0.3\textwidth}
-            \begin{center}
-                \includegraphics[height=0.1\textheight]{Bilder/Optische_Datentraeger_Die_Compact_Disc/Funktionsweise/cdlaser.png}
-                \caption[destruktive Interferenz von Laserlicht bei einem \textit{pit} \newline \url{http://www.muenster.de/~asshoff/physik/cd/image50.gif} (zuletzt aufgerufen am 07.08.2015)]{destruktive Interferenz von Laserlicht bei einem \textit{pit}}
-                \label{fig:cdlaser}
-            \end{center}
-        \end{minipage}
-        \hspace{0.025\textwidth}
-        \begin{minipage}[t]{0.3\textwidth}
-            \begin{center}
-                \includegraphics[width=0.9\textwidth]{Bilder/Optische_Datentraeger_Die_Compact_Disc/Funktionsweise/cdstrom.png}
-                \caption[Stromstärkenverlauf \newline \url{http://www.muenster.de/~asshoff/physik/cd/image51.gif} (zuletzt aufgerufen am 07.08.2015)]{Stromstärkenver-lauf}
-                \label{fig:cdstrom}
-            \end{center}
-        \end{minipage}
-    \end{center}
-\end{figure}
+\ifthenelse{\boolean{showPics}}{
+    \begin{figure}[h]
+        \begin{center}
+            \begin{minipage}[t]{0.3\textwidth}
+                \begin{center}
+                    \includegraphics[height=0.1\textheight]{Bilder/Optische_Datentraeger_Die_Compact_Disc/Funktionsweise/remcd.png}
+                    \caption[Laserlicht auf einem \textit{pit} unter einem Rasterelektronenmikroskop \newline Roth, Klaus: CD, DVD \& Co.: Die Chemie der schillernden Scheiben, in: Chemie in unserer Zeit (41/2007), S. 340]{Laserlicht auf einem \textit{pit} unter einem Rasterelektronenmikroskop}
+                    \label{fig:cdrem}
+                \end{center}
+            \end{minipage}
+            \hspace{0.025\textwidth}
+            \begin{minipage}[t]{0.3\textwidth}
+                \begin{center}
+                    \includegraphics[height=0.1\textheight]{Bilder/Optische_Datentraeger_Die_Compact_Disc/Funktionsweise/cdlaser.png}
+                    \caption[destruktive Interferenz von Laserlicht bei einem \textit{pit} \newline \url{http://www.muenster.de/~asshoff/physik/cd/image50.gif} (zuletzt aufgerufen am 07.08.2015)]{destruktive Interferenz von Laserlicht bei einem \textit{pit}}
+                    \label{fig:cdlaser}
+                \end{center}
+            \end{minipage}
+            \hspace{0.025\textwidth}
+            \begin{minipage}[t]{0.3\textwidth}
+                \begin{center}
+                    \includegraphics[width=0.9\textwidth]{Bilder/Optische_Datentraeger_Die_Compact_Disc/Funktionsweise/cdstrom.png}
+                    \caption[Stromstärkenverlauf \newline \url{http://www.muenster.de/~asshoff/physik/cd/image51.gif} (zuletzt aufgerufen am 07.08.2015)]{Stromstärkenver-lauf}
+                    \label{fig:cdstrom}
+                \end{center}
+            \end{minipage}
+        \end{center}
+    \end{figure}
+}{}
 
 Neben der CD sind gebräuchliche optische Datenträger die DVD (Digital Video
 Disc) und die Blue-ray Disc, welche für die Speicherung von Filmen verwendet

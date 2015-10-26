@@ -8,25 +8,27 @@ Videodisc (siehe \autoref{fig:videodisc}). Sie sollte eine Alternative zum
 VHS-Videosystem (siehe \autoref{fig:vhs}) darstellen, war jedoch aufgrund der
 geringen Verkaufszahlen nicht erfolgreich.
 
-\begin{figure}[h]
-    \begin{center}
-        \begin{minipage}[t]{0.3\textwidth}
-            \begin{center}
-                \includegraphics[height=0.1\textheight]{Bilder/Optische_Datentraeger_Die_Compact_Disc/Geschichte/videodisc.png}
-                \caption[Laservision Videodisc \newline \url{http://www.sciencemuseum.org.uk/online_science/explore_our_collections/objects/index/smxg-8095649} (zuletzt aufgerufen am 19.09.2015)]{Laservision \newline Videodisc}
-                \label{fig:videodisc}
-            \end{center}
-        \end{minipage}
-        \hspace{0.025\textwidth}
-        \begin{minipage}[t]{0.3\textwidth}
-            \begin{center}
-                \includegraphics[height=0.1\textheight]{Bilder/Optische_Datentraeger_Die_Compact_Disc/Geschichte/vhs.png}
-                \caption[VHS cassette \newline \url{https://upload.wikimedia.org/wikipedia/commons/6/67/VHS-cassette.jpg} (zuletzt aufgerufen am 19.09.2015)]{VHS Cassette}
-                \label{fig:vhs}
-            \end{center}
-        \end{minipage}
-    \end{center}
-\end{figure}
+\ifthenelse{\boolean{showPics}}{
+    \begin{figure}[h]
+        \begin{center}
+            \begin{minipage}[t]{0.3\textwidth}
+                \begin{center}
+                    \includegraphics[height=0.1\textheight]{Bilder/Optische_Datentraeger_Die_Compact_Disc/Geschichte/videodisc.png}
+                    \caption[Laservision Videodisc \newline \url{http://www.sciencemuseum.org.uk/online_science/explore_our_collections/objects/index/smxg-8095649} (zuletzt aufgerufen am 19.09.2015)]{Laservision \newline Videodisc}
+                    \label{fig:videodisc}
+                \end{center}
+            \end{minipage}
+            \hspace{0.025\textwidth}
+            \begin{minipage}[t]{0.3\textwidth}
+                \begin{center}
+                    \includegraphics[height=0.1\textheight]{Bilder/Optische_Datentraeger_Die_Compact_Disc/Geschichte/vhs.png}
+                    \caption[VHS cassette \newline \url{https://upload.wikimedia.org/wikipedia/commons/6/67/VHS-cassette.jpg} (zuletzt aufgerufen am 19.09.2015)]{VHS Cassette}
+                    \label{fig:vhs}
+                \end{center}
+            \end{minipage}
+        \end{center}
+    \end{figure}
+}{}
 
 Auf Basis der Videodisc entwickelte Philips bis 1977 die Compact Disc Digital
 Audio mit einem Durchmesser von 11,5 cm und einer Spielzeit von 60 Minuten. Ab
@@ -56,14 +58,16 @@ erreichte im Jahr 1997 ein Maximum von 2,3 Mrd. \euro. Ab 1997 waren die
 Verkaufszahlen rückläufig, da Privatperson selbst CDs \glqq brennen\grqq{}
 konnten und zunehmend legale und illegale Angebote im Internet nutzten.
 
-\begin{figure}[h]
-    \begin{center}
-        \begin{minipage}[t]{\textwidth}
-            \begin{center}
-                \includegraphics[width=\textwidth]{Bilder/Optische_Datentraeger_Die_Compact_Disc/Geschichte/cdumsatz.png}
-                \caption[Umsatzentwicklung der deutschen Musikindustrie \newline \url{http://www.musikindustrie.de/uploads/media/140325\_BVMI\_2013\_Jahrbuch\_ePaper\_V02.pdf} S.7 (zuletzt aufgerufen am 03.08.2015)]{Umsatzentwicklung der deutschen Musikindustrie}
-                \label{fig:umsatzcd}
-            \end{center}
-        \end{minipage}
-    \end{center}
-\end{figure}
+\ifthenelse{\boolean{showPics}}{
+    \begin{figure}[h]
+        \begin{center}
+            \begin{minipage}[t]{\textwidth}
+                \begin{center}
+                    \includegraphics[width=\textwidth]{Bilder/Optische_Datentraeger_Die_Compact_Disc/Geschichte/cdumsatz.png}
+                    \caption[Umsatzentwicklung der deutschen Musikindustrie \newline \url{http://www.musikindustrie.de/uploads/media/140325\_BVMI\_2013\_Jahrbuch\_ePaper\_V02.pdf} S.7 (zuletzt aufgerufen am 03.08.2015)]{Umsatzentwicklung der deutschen Musikindustrie}
+                    \label{fig:umsatzcd}
+                \end{center}
+            \end{minipage}
+        \end{center}
+    \end{figure}
+}{}
