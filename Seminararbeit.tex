@@ -23,11 +23,6 @@
 
 \usepackage[nottoc,numbib]{tocbibind}
 
-\renewcommand{\listoffigures}{\begingroup
-\tocsectionl
-\tocfile{\listfigurename}{lof}
-\endgroup}
-
 % Use Helvet font globally
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
@@ -71,9 +66,18 @@
 
 \makeatletter
 \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
-  {-3.25ex\@plus -1ex \@minus -.2ex}%
-  {1.5ex \@plus .2ex}%
-  {\normalfont\normalsize\bfseries}}
+    {-3.25ex\@plus -1ex \@minus -.2ex}%
+    {1.5ex \@plus .2ex}%
+    {\normalfont\normalsize\bfseries}}
+\makeatother
+
+\makeatletter
+\renewcommand\listoffigures{%
+    \section{\listfigurename}%
+    \@mkboth{\MakeUppercase\listfigurename}%
+            {\MakeUppercase\listfigurename}%
+    \@starttoc{lof}%
+}
 \makeatother
 
 \newboolean{showPics}
@@ -89,7 +93,7 @@
 \year{2014/2016}
 \subject{Chemie}
 \seminar{Kunststoffchemie}
-\supervisor{Fr. Müllerburger}
+\supervisor{Fr. Müller-Burger}
 \deadline{10.11.2015}
 \genderAuthor{m}
 \genderSupervisor{f}
