@@ -1,11 +1,11 @@
 \subsubsection{Polykondensation von Polycarbonat}
 
 Polycarbonat kann entweder über eine Umesterung oder über eine
-Grenzflächenkondensation hergestellt werden \cite{cuzpe}. Beide Reaktionen
-können als Sonderformen der Polykondensation eingeordnet werden, da ein
-Polyester entsteht, sich aber kein Wasser abspaltet. Polycarbonat selbst ist ein
-lineares Makromolekül und zählt somit zu den Thermoplasten, da die beiden Edukte
-jeweils über zwei funktionale Gruppen verfügen.
+Grenzflächenkondensation hergestellt werden \cite{cuzpe}. Beide Reaktionen sind
+Sonderformen der Polykondensation, da ein Polyester entsteht, sich aber kein
+Wasser abspaltet. Polycarbonat selbst ist ein lineares Makromolekül und zählt
+somit zu den Thermoplasten, da die beiden Edukte jeweils über zwei funktionale
+Gruppen verfügen.
 
 \paragraph{Umesterung} Bei der Umesterung kommen die geschmolzenen Monomere
 Bisphenol A und Diphenylcarbonat zum Einsatz. \autoref{rec:diphenylcarbonat}
@@ -23,13 +23,13 @@ wenn keine Monomere mehr vorhanden sind.
             \footnotesize
             \setatomsep{1.7em}
 
-            \chemname{\chemfig{*6(-=-(-OH)=-=)}}{Phenol}
+            \chemname{$2$ \chemfig{*6(-=-(-OH)=-=)}}{Phenol}
             \chemsign{+}
             \chemname{\chemfig{C(=[:90]\lewis{13,O})(-[:210,1.25pt]\lewis{357,Cl})(-[:330,1.25pt]\lewis{157,Cl})}}{Phosgen}
             \chemrel{->}
             \chemname{\chemfig{C(=[:90]\lewis{13,O})(-[:210,1.25pt]\lewis{57,O}-[:150](*6(-=-=-=)))(-[:330,1.25pt]\lewis{57,O}-[:30](*6(-=-=-=)))}}{Diphenylcarbonat}
             \chemsign{+}
-            \chemname{\chemfig{HCl}}{Salzsäure}
+            \chemname{$2$ \chemfig{HCl}}{Salzsäure}
 
             \caption{Herstellung von Diphenylcarbonat}
             \label{rec:diphenylcarbonat}
@@ -41,17 +41,17 @@ wenn keine Monomere mehr vorhanden sind.
             \footnotesize
             \setatomsep{1.7em}
 
-            \chemname{\chemfig{C(-[4]*6(-=-(-$\scriptstyle n$\,HO)=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-OH)=-=))}}{Bisphenol A}
-            \chemsign{+ $\scriptstyle n$}
-            \chemname{\chemfig{C(=[:90]\lewis{13,O})(-[:210,1.25pt]\lewis{57,O}-[:150](*6(-=-=-=)))(-[:330,1.25pt]\lewis{57,O}-[:30](*6(-=-=-=)))}}{Diphenylcarbonat}
+            \chemname{$n$ \chemfig{C(-[4]*6(-=-(-HO)=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-OH)=-=))}}{Bisphenol A}
+            \chemsign{+}
+            \chemname{$n$ \chemfig{C(=[:90]\lewis{13,O})(-[:210,1.25pt]\lewis{57,O}-[:150](*6(-=-=-=)))(-[:330,1.25pt]\lewis{57,O}-[:30](*6(-=-=-=)))}}{Diphenylcarbonat}
 
             \vspace{10pt}
 
             \chemrel{->}
             \chemname{\chemfig{C(-[4]*6(-=-(-\lewis{26,O}-[@{op,0.5}]H)=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-\lewis{26,O}-C(=[2]\lewis{13,O})-[@{cl,0.75}]\lewis{26,O}-(*6(-=-=-=)))=-=))}}{Polycarbonat}
             \makebraces[23pt,23pt]{n}{op}{cl}
-            \chemsign{+ $\scriptstyle (2n-1)$}
-            \chemname{\chemfig{*6(-=-(-OH)=-=)}}{Phenol}
+            \chemsign{+}
+            \chemname{$(2n-1)$ \chemfig{*6(-=-(-OH)=-=)}}{Phenol}
 
             \caption{Umesterung: Polykondensation von Polycarbonat}
             \label{rec:polycarbonat}
@@ -61,27 +61,28 @@ wenn keine Monomere mehr vorhanden sind.
 
 Die \autoref{rec:deprotonierung} bis \autoref{rec:abspaltung} zeigen den ersten
 Umesterungsvorgang, also den Beginn des Kettenwachstums im basischen Milieu. Als
-erstes findet die Deprotonierung (siehe \autoref{rec:deprotonierung}) von
-Bisphenol A statt. Dabei spaltet sich ein Proton (H\textsuperscript{+}) von
-einer der Hydroxygruppen ab und lagert sich an das Hydroxidion an. Durch diesen
-Vorgang wird das Bisphenol A negativ geladen und das Hydroxidion wird zu Wasser
-protoniert. Die Umesterung selbst beginnt mit dem nukleophilen Angriff (siehe
-\autoref{rec:nukleophilerangriff}) des Bisphenol A-Anions auf das
-Diphenylcarbonat. Dabei lagert sich das negativ geladene Sauerstoffatom an das
-positivpolarisierte Kohlenstoffatom des Diphenylcarbonats an. Aufgrund der
-Vierbindigkeit des C-Atoms \glqq klappt\grqq{} eine der Elektronenpaarbindungen
-des doppeltgebunden Sauerstoffatoms zu dem O-Atom. Durch weiteres \glqq
-Herumklappen\grqq{} von Elektronenpaarbindungen, wie in \autoref{rec:abspaltung}
-dargestellt, kann eine der Phenylgruppen in Form eines Phenolations abgespalten
-werden. Dabei bildet sich die Doppelbindung zwischen dem Sauerstoff- und dem
-Kohlenstoffatom zurück und die Bindung zwischen einer der beiden Phenylgruppen
-und dem C-Atom \glqq klappt\grqq{} zum O-Atom. Das entstandene Dimer kann
-entweder einen eigenen nukleophilen Angriff auf ein Diphenylcarbonat oder auf
-ein ebenfalls durch Umesterung entstandenes Oligomer bzw. Polymer durchführen,
-vorausgesetzt die verbliebene Hydroxygruppe wurde zuvor deprotoniert, oder es
-wird selbst durch ein Bisphenonal A-Anion oder durch ein deprotoniertes Oligomer
-bzw. Polymer angegriffen. In beiden Fällen kommt es zu einer Umesterung und die
-Kette wächst durch die Wiederholung dieser Schritte zu einem Polycarbonat an.
+erstes findet die Deprotonierung von Bisphenol A (siehe
+\autoref{rec:deprotonierung}) statt. Dabei spaltet sich ein Proton
+(H\textsuperscript{+}) von einer der Hydroxygruppen ab und lagert sich an das
+Hydroxidion an. Durch diesen Vorgang wird das Bisphenol A negativ geladen und
+das Hydroxidion wird zu Wasser protoniert. Die Umesterung selbst beginnt mit dem
+nukleophilen Angriff (siehe \autoref{rec:nukleophilerangriff}) des Bisphenol
+A-Anions auf das Diphenylcarbonat. Dabei lagert sich das negativ geladene
+Sauerstoffatom an das positiv polarisierte Kohlenstoffatom des Diphenylcarbonats
+an. Aufgrund der Vierbindigkeit des C-Atoms \glqq klappt\grqq{} eine der
+Elektronenpaarbindungen des doppeltgebundenen Sauerstoffatoms zu dem O-Atom.
+Durch weiteres \glqq Herumklappen\grqq{} von Elektronenpaarbindungen, wie in
+\autoref{rec:abspaltung} dargestellt, kann eine der Phenylgruppen in Form eines
+Phenolations abgespalten werden. Dabei bildet sich die Doppelbindung zwischen
+dem Sauerstoff- und dem Kohlenstoffatom zurück und die Bindung zwischen einer
+der beiden Phenylgruppen und dem C-Atom \glqq klappt\grqq{} zum O-Atom. Das
+entstandene Dimer kann einen eigenen nukleophilen Angriff auf ein
+Diphenylcarbonat oder auf ein ebenfalls durch Umesterung entstandenes Oligomer
+bzw. Polymer durchführen, vorausgesetzt die verbliebene Hydroxygruppe wurde
+zuvor deprotoniert. Alternativ kann es selbst durch ein Bisphenol A-Anion oder
+durch ein deprotoniertes Oligomer bzw. Polymer angegriffen werden. In beiden
+Fällen kommt es zu einer Umesterung und die Kette wächst durch die Wiederholung
+dieser Schritte zu einem Polycarbonat an.
 
 \ifthenelse{\boolean{showPics}}{
     \begin{figure}[H]
@@ -150,10 +151,10 @@ Kette wächst durch die Wiederholung dieser Schritte zu einem Polycarbonat an.
 }{}
 
 \paragraph{Grenzflächenkondensation} Die zweite Möglichkeit, Polycarbonat
-herzustellen, besteht in der Grenzflächenkondensation. Hierfür wird Bisphenol A
-in eine wässrige basische Lösung und Phosgen in eine organische Lösung versetzt
-\cite{cuzpe}. Als Base für die wässrige Lösung kann z.B. Natriumhydroxid dienen.
-Durch die Deprotonierung von Bisphonol A durch Natriumhydroxid (siehe
+herzustellen, besteht in der Grenzflächenkondensation. Hierfür werden Bisphenol
+A in eine wässrige basische Lösung sowie Phosgen in eine organische Lösung
+versetzt \cite{cuzpe}. Als Base kann z.B. Natriumhydroxid dienen. Durch die
+Deprotonierung von Bisphenol A durch Natriumhydroxid (siehe
 \autoref{rec:deprotonierung2}) enthält die wässrige Lösung Bisphenol A-Anionen
 und Natriumionen. Durch die negative Ladung des Bisphenol A erhöht sich dessen
 Reaktivität und begünstigt das Kettenwachstum. \autoref{rec:polycarbonat2} zeigt
@@ -161,12 +162,12 @@ die Polymerbildung durch eine Polykondensation zwischen den Bisphenol A-Anionen
 und Phosgen an der Grenzfläche zwischen der basischen und organischen Phase.
 Dabei spalten sich Chloridionen ab, welche mit den Natriumionen als
 Natriumchlorid ausfallen. Die Reaktion in \autoref{rec:polycarbonat2} findet in
-Form eines nukleophilen Angriffes statt, der dem zwischen dem Bispenol A-Anion
+Form eines nukleophilen Angriffes statt, der dem zwischen dem Bisphenol A-Anion
 und Diphenylcarbonat in \autoref{rec:nukleophilerangriff} und
 \autoref{rec:abspaltung} ähnelt (das Phosgen übernimmt die Funktion des
 Diphenylcarbonats und es spaltet sich statt eines Phenolations ein Chloridion
-ab). Das Polycarbonat lässt sich durch Verdampfen des organischen
-Lösungsmittels, in welchem sich das Polymer ansammelt, gewinnen \cite{garoo}.
+ab). Durch Verdampfen des organischen Lösungsmittels lässt sich das Polycarbonat
+gewinnen \cite{garoo}.
 
 \ifthenelse{\boolean{showPics}}{
     \begin{figure}[H]
@@ -176,14 +177,14 @@ Lösungsmittels, in welchem sich das Polymer ansammelt, gewinnen \cite{garoo}.
 
             \chemname{\chemfig{C(-[4]*6(-=-(-HO)=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-OH)=-=))}}{Bisphenol A}
             \chemsign{+}
-            \chemname{\chemfig{2Na(-[:45,.5,,,draw=none]\fsscrp)(-[:0,1.2,,,draw=none])OH(-[:135,.5,,,draw=none]\fsscrm)}}{Natriumhydroxid}
+            \chemname{$2$ \chemfig{Na(-[:45,.5,,,draw=none]\fsscrp)(-[:0,1.2,,,draw=none])OH(-[:135,.5,,,draw=none]\fsscrm)}}{Natriumhydroxid}
 
             \vspace{10pt}
 
             \chemrel{->}
             \chemname{\chemfig{C(-[4]*6(-=-(-\lewis{246,O}(-[:135,.7,,,draw=none]\fsscrm)(-[:180,1.4,,,draw=none])Na(-[:45,.6,,,draw=none]\fsscrp))=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-\lewis{026,O}(-[:45,.7,,,draw=none]\fsscrm)(-[:0,1.4,,,draw=none])Na(-[:135,.6,,,draw=none]\fsscrp))=-=))}}{Bisphenol A-Anion, Natriumionen}
             \chemsign{+}
-            \chemname{\chemfig{2H_2O}}{Wasser}
+            \chemname{$2$ \chemfig{H_2O}}{Wasser}
 
             \caption{Grenzflächenkondensation: Deprotonierung von Bisphenol A durch Natriumhydroxid}
             \label{rec:deprotonierung2}
@@ -195,17 +196,17 @@ Lösungsmittels, in welchem sich das Polymer ansammelt, gewinnen \cite{garoo}.
             \footnotesize
             \setatomsep{1.7em}
 
-            \chemname{\chemfig{C(-[4]*6(-=-(-\lewis{246,O}(-[:135,.7,,,draw=none]\fsscrm)(-[:180,1.4,,,draw=none])$\scriptstyle n$\,Na(-[:45,.6,,,draw=none]\fsscrp))=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-\lewis{026,O}(-[:45,.7,,,draw=none]\fsscrm)(-[:0,1.4,,,draw=none])Na(-[:135,.6,,,draw=none]\fsscrp))=-=))}}{Bisphenol A-Anion, Natriumionen}
-            \chemsign{+ $\scriptstyle n$}
-            \chemname{\chemfig{C(=[:90]\lewis{13,O})(-[:210,1.25pt]\lewis{357,Cl})(-[:330,1.25pt]\lewis{157,Cl})}}{Phosgen}
+            \chemname{$n$ \chemfig{C(-[4]*6(-=-(-\lewis{246,O}(-[:135,.7,,,draw=none]\fsscrm)(-[:180,1.4,,,draw=none])Na(-[:45,.6,,,draw=none]\fsscrp))=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-\lewis{026,O}(-[:45,.7,,,draw=none]\fsscrm)(-[:0,1.4,,,draw=none])Na(-[:135,.6,,,draw=none]\fsscrp))=-=))}}{Bisphenol A-Anion, Natriumionen}
+            \chemsign{+}
+            \chemname{$n$ \chemfig{C(=[:90]\lewis{13,O})(-[:210,1.25pt]\lewis{357,Cl})(-[:330,1.25pt]\lewis{157,Cl})}}{Phosgen}
 
             \vspace{10pt}
 
             \chemrel{->}
             \chemname{\chemfig{C(-[4]*6(-=-(-\lewis{26,O}-[@{op,0.75}])=-=))(-[2]CH_3)(-[6]CH_3)(-[0]*6(-=-(-\lewis{26,O}-C(=[2]\lewis{13,O})-[@{cl,0.75}])=-=))}}{Polycarbonat}
             \makebraces[23pt,23pt]{n}{op}{cl}
-            \chemsign{+ $\scriptstyle 2n$}
-            \chemname{\chemfig{Na(-[:45,.6,,,draw=none]\fsscrp)(-[:0,1.3,,,draw=none])Cl(-[:135,.6,,,draw=none]\fsscrm)}}{Natriumchlorid}
+            \chemsign{+}
+            \chemname{$2n$ \chemfig{Na(-[:45,.6,,,draw=none]\fsscrp)(-[:0,1.3,,,draw=none])Cl(-[:135,.6,,,draw=none]\fsscrm)}}{Natriumchlorid}
 
             \caption{Grenzflächenkondensation: Polykondensation von Polycarbonat}
             \label{rec:polycarbonat2}

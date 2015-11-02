@@ -1,12 +1,13 @@
 \subsection{Funktionsweise von optischen Datenträgern}
 \label{subsec:cdfunktionsweise}
 
-Die Compact Disc besteht aus einer Polycarbonatscheibe und einer 40-80 nm
-dicken, zumeist aus Aluminium bestehenden Reflexionsschicht. Zusätzlich gibt es
-noch eine 10-20 µm dicke Lackschicht, welche die Reflexionsschicht schützt.
-Zusammen genommen ergibt dies eine Höhe von ca. 1,2 mm (siehe
-\autoref{fig:cdquer}). Außerdem lässt sich eine Einbuchtung (\textit{pit})
-erkennen, die sich von der Grundebene (\textit{land}) abhebt. \cite{cfcd}
+Die Compact Disc besteht aus einer Polycarbonatscheibe und einer
+\nolbreaks{40-80 nm} dicken, zumeist aus Aluminium bestehenden
+Reflexionsschicht. Zusätzlich gibt es noch eine \nolbreaks{10-20 µm} dicke
+Lackschicht, welche die Reflexionsschicht schützt. Zusammen genommen ergibt sich
+eine Höhe von ca. \nolbreaks{1,2 mm} (siehe \autoref{fig:cdquer}). Außerdem
+lässt sich eine Ausbuchtung (\textit{pit}) erkennen, die sich von der Grundebene
+(\textit{land}) abhebt.
 
 \ifthenelse{\boolean{showPics}}{
     \begin{figure}[h]
@@ -14,7 +15,7 @@ erkennen, die sich von der Grundebene (\textit{land}) abhebt. \cite{cfcd}
             \begin{minipage}[t]{\textwidth}
                 \begin{center}
                     \includegraphics[height=0.1\textheight]{Bilder/Optische_Datentraeger_Die_Compact_Disc/Funktionsweise/cdquer.png}
-                    \caption[Querschnitt einer CD \newline \url{http://daten.didaktikchemie.uni-bayreuth.de/umat/cd_dvd/cd-ausschnitt.gif} (zuletzt aufgerufen am 07.08.2015)]{Querschnitt einer CD}
+                    \caption[Querschnitt einer CD \newline verändert nach \url{http://daten.didaktikchemie.uni-bayreuth.de/umat/cd_dvd/cd-ausschnitt.gif} (zuletzt aufgerufen am 07.08.2015)]{Querschnitt einer CD}
                     \label{fig:cdquer}
                 \end{center}
             \end{minipage}
@@ -22,24 +23,29 @@ erkennen, die sich von der Grundebene (\textit{land}) abhebt. \cite{cfcd}
     \end{figure}
 }{}
 
-Die Abtasteinheit, bestehend aus einem Laser und einem Photodetektor, liest die
+Die Abtasteinheit, bestehend aus einem Laser und einem Fotodetektor, liest die
 Informationen auf einer spiralförmigen Spur von innen nach außen aus. Dafür
 wandelt der Fotodetektor das Laserlicht, das durch die Polycarbonatscheibe geht
 und von der Reflexionsschicht zurückgeworfen wird, in Strom um, wobei die
 Stromstärke abhängig von der Lichtintensität ist. Überstreift der Laserstrahl
 ein \textit{pit}, nehmen die Lichtintensität und damit auch die Stromstärke ab.
-Da der Durchmesser des Laserstrahls größer als die Pitbreite ist (siehe
-\autoref{fig:cdrem}), trifft dieser nur teilweise auf den \textit{pit}. Der Rest
-des Lichtes trifft etwas früher auf den umgebenden \textit{land}. Die
-Verschiebung der Strahlen gegeneinander, welche man in \autoref{fig:cdlaser}
-erkennen kann, resultiert in einer Intensitätsabnahme, da es aufgrund der
-destruktiven Interferenz\footnote{Wellenberg und Wellental zweier Lichtstrahlen
-mit gleicher Frequenz und Amplitude treffen aufeinander und heben sich
-gegenseitig auf.} zu einer teilweisen Auslöschung des Laserlichts kommt.
-\autoref{fig:cdstrom} zeigt einen möglichen Stromstärkenverlauf. Den Übergängen
-zwischen \textit{pit} und \textit{land} wird der Binärwert 1 zugewiesen. Dies
-entspricht dem Schnittpunkt zwischen der Mittelwertlinie und dem Graph der
-Stromstärke in \autoref{fig:cdstrom}. \cite{cdp}
+Da der Durchmesser des Laserstrahls größer als die Breite des \textit{pit} ist
+(siehe \autoref{fig:cdrem}), trifft dieser nur teilweise auf den \textit{pit}.
+Der Rest des Lichtes trifft etwas später auf den umgebenden \textit{land}. Die
+Verschiebung der Strahlen gegeneinander, erkennbar in \autoref{fig:cdlaser},
+resultiert in einer Intensitätsabnahme. Die Verschiebung beträgt ca. die Hälfte
+der Wellenlänge des Laserstrahles, sodass sich Wellental und Wellenberg
+gegenüberstehen und gegenseitig auslöschen. Dieses Phänomen heißt destruktive
+Interferenz. \autoref{fig:cdstrom} zeigt einen möglichen Stromstärkenverlauf.
+Den Übergängen zwischen \textit{pit} und \textit{land} wird der Binärwert 1
+zugewiesen. Dies entspricht dem Schnittpunkt zwischen der Mittelwertlinie und
+dem Graph der Stromstärke in \autoref{fig:cdstrom}. \cite{cdp}
+
+
+%da es aufgrund der destruktiven Interferenz\footnote{Wellenberg und %Wellental
+%zweier Lichtstrahlen mit gleicher Frequenz und Amplitude treffen aufeinander
+%und heben sich gegenseitig auf.} zu einer teilweisen Auslöschung desLaserlichts
+%kommt.
 
 \ifthenelse{\boolean{showPics}}{
     \begin{figure}[h]
@@ -71,7 +77,7 @@ Stromstärke in \autoref{fig:cdstrom}. \cite{cdp}
     \end{figure}
 }{}
 
-Neben der CD sind gebräuchliche optische Datenträger die DVD (Digital Video
-Disc) und die Blue-ray Disc, welche für die Speicherung von Filmen verwendet
-werden. Beide zeichnen sich durch eine höhere Speicherkapazität aufgrund von
-geringeren Spurabständen und mehrlagigen Informationsebenen aus.
+Neben der CD sind gebräuchliche optische Datenträger die DVD und die Blue-ray
+Disc, welche meistens für die Speicherung von Filmen verwendet werden. Beide
+zeichnen sich durch eine höhere Speicherkapazität aufgrund von geringeren
+Spurabständen und mehreren Informationsebenen aus.
